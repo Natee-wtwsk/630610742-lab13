@@ -1,6 +1,9 @@
 #include<iostream>
-
+#include<string>
 using namespace std;
+
+template<class var>
+void mySwap(var &a, var &b);
 
 int main(){
 	int x, y;
@@ -30,3 +33,9 @@ int main(){
 	return 0;
 }
 
+template<class var>
+void mySwap(var &a, var &b){
+	var x = a;
+	a=b, b=x;
+	return;
+}
